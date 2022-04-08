@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero_component {
+  height: 91vh;
+}
+
+@media screen and (max-width: 765px) {
+  .hero_component {
+    height: 92.85vh;
+  }
+}
