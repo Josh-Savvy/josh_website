@@ -12,27 +12,31 @@ const Contact = () => {
             </p>
           </div>
           <div className="mt-6 flex flex-col justify-center sm:flex-row">
-            <div className="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
-              <div className="flex items-center">
-                <i className="bx bx-phone text-2xl text-grey-40"></i>
-                <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-                  My Phone
+            <div className="w-full border-l-2 border-t-2 hover:shadow-xl border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
+              <a href="tel:+23481119944693">
+                <div className="flex items-center">
+                  <i className="bx bx-phone text-2xl text-grey-40"></i>
+                  <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                    My Phone
+                  </p>
+                </div>
+                <p className="pt-2 text-left font-body font-bold text-sky-600 lg:text-lg">
+                  (+234) 811 199 4693
                 </p>
-              </div>
-              <p className="pt-2 text-left font-body font-bold text-sky-600 lg:text-lg">
-                (+234) 811 199 4693
-              </p>
+              </a>
             </div>
-            <div className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
-              <div className="flex items-center">
-                <i className="bx bx-envelope text-2xl text-grey-40"></i>
-                <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-                  Send me a mail
+            <div className="w-full border-l-2 border-t-0 hover:shadow-xl border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+              <a href="mailto:joshtee28@gmail.com">
+                <div className="flex items-center">
+                  <i className="bx bx-envelope text-2xl text-grey-40"></i>
+                  <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                    Send me a mail
+                  </p>
+                </div>
+                <p className="pt-2 text-left font-body font-bold text-sky-600 lg:text-lg">
+                  joshtee28@gmail.com
                 </p>
-              </div>
-              <p className="pt-2 text-left font-body font-bold text-sky-600 lg:text-lg">
-                joshtee28@gmail.com
-              </p>
+              </a>
             </div>
           </div>
         </div>
