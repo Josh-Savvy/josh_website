@@ -162,8 +162,8 @@ const Layout = ({ children, activeLink, title }) => {
         <div
           className={
             mobileMenu
-              ? "opacity-100 pointer-events-auto fixed inset-0 z-70 min-h-screen bg-white bg-opacity-70 transition-opacity lg:hidden"
-              : "pointer-events-none opacity-0 fixed inset-0 z-70 min-h-screen bg-white bg-opacity-70 transition-opacity lg:hidden"
+              ? "opacity-100 pointer-events-auto fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
+              : "pointer-events-none opacity-0 fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
           }
           onClick={() => toggleMobileMenu("close")}
         >
