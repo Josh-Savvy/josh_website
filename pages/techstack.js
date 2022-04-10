@@ -159,6 +159,29 @@ const TechStack = () => {
               <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                 <div className="hidden group-hover:block">
                   <img
+                    src="/static/assets/svgs/github.svg"
+                    className="h-24"
+                    alt="github-icon"
+                  />
+                </div>
+                <div className="block group-hover:hidden">
+                  <img
+                    src="/static/assets/svgs/github.svg"
+                    className="h-24"
+                    alt="github-icon"
+                  />
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="pt-8 text-lg font-semibold uppercase text-sky-600 group-hover:text-white lg:text-2xl">
+                  nextjs
+                </h3>
+              </div>
+            </div>
+            <div className="group rounded px-8 py-12 shadow hover:bg-sky-600">
+              <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div className="hidden group-hover:block">
+                  <img
                     src="/static/assets/svgs/typescript.svg"
                     className="h-24"
                     alt="typescript-icon"

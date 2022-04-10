@@ -20,14 +20,16 @@ const About = () => {
                   I'm Joshua Joseph, a Software Developer,
                 </h4>
                 <p className="pt-3 font-body leading-relaxed text-grey-20">
-                  <span className="text-black font-semibold">from Lagos, Nigeria.</span> I'm
-                  an innovative software developer with some years of experience
-                  managing aspects of the development process and developing
-                  dynamic web applications for small to medium-sized companies,
-                  transforming the way brands interact with audiences through
-                  creation of digital contents. Entrepreneurial at heart and a
-                  team player recognized for impassioned approach and colorful
-                  ideas. I am confident in my ability and I'm extremely
+                  <span className="text-black font-semibold">
+                    from Lagos, Nigeria.
+                  </span>{" "}
+                  I'm an innovative software developer with some years of
+                  experience managing aspects of the development process and
+                  developing dynamic web applications for small to medium-sized
+                  companies, transforming the way brands interact with audiences
+                  through creation of digital contents. Entrepreneurial at heart
+                  and a team player recognized for impassioned approach and
+                  colorful ideas. I am confident in my ability and I'm extremely
                   motivated to constantly develop my skills and grow
                   professionally.
                 </p>
