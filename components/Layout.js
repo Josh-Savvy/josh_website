@@ -200,7 +200,7 @@ const Layout = ({ children, activeLink, title }) => {
 
                 <span
                   className={
-                    activeLink === "techstack"
+                    activeLink === "tech-stack"
                       ? "block h-0.5 w-1/2 bg-yellow"
                       : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
                   }
