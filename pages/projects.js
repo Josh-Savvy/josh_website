@@ -24,8 +24,8 @@ const Projects = () => {
                 />
               </a>
               <div className="">
-                <p className="font-semibold">Shopable App</p>
-                <p className="text-gray-400 mt-2 text-center">
+                <p className="font-semibold mt-2">Shopable App</p>
+                <p className="text-gray-400 mt-1 text-center">
                   React | Redux | NodeJS | MongoDB | Bootstrap
                 </p>
               </div>
@@ -43,8 +43,8 @@ const Projects = () => {
                 />
               </a>
               <div className="">
-                <p className="font-semibold">Enrolled Agents</p>
-                <p className="text-gray-400 mt-2 text-center">
+                <p className="font-semibold mt-2">Enrolled Agents</p>
+                <p className="text-gray-400 mt-1 text-center">
                   NextJS | React | Redux | NodeJS | MySQL | Bootstrap
                 </p>
               </div>
