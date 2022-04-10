@@ -24,7 +24,7 @@ const Projects = () => {
                 />
               </a>
               <div className="">
-                <p className="font-semibold mt-2 text-xl">Shopable App</p>
+                <p className="font-semibold mt-2 text-xl text-center">Shopable App</p>
                 <p className="text-gray-400 mt-1 text-center">
                   React | Redux | NodeJS | MongoDB | Bootstrap
                 </p>
@@ -43,7 +43,7 @@ const Projects = () => {
                 />
               </a>
               <div className="">
-                <p className="font-semibold mt-2 text-xl">Enrolled Agents</p>
+                <p className="font-semibold mt-2 text-xl text-center">Enrolled Agents</p>
                 <p className="text-gray-400 mt-1 text-center">
                   NextJS | React | Redux | NodeJS | MySQL | Bootstrap
                 </p>
