@@ -174,7 +174,7 @@ const TechStack = () => {
               </div>
               <div className="text-center">
                 <h3 className="pt-8 text-lg font-semibold uppercase text-sky-600 group-hover:text-white lg:text-2xl">
-                  nextjs
+                github
                 </h3>
               </div>
             </div>
