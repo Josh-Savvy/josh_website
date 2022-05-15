@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({ viewCounts }) => {
   return (
     <div>
       <div
@@ -43,6 +43,9 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="absolute right-2 bottom-2 text-sm text-white">
+                  Profile views this month: {viewCounts}
                 </div>
               </div>
             </div>
