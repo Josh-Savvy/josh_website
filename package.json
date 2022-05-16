@@ -12,9 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
-    "countapi-js": "^1.0.2",
-    "mongoose": "^6.3.3",
+    "jsonwebtoken": "^8.5.1",
     "next": "^12.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
