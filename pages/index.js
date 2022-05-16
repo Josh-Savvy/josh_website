@@ -14,10 +14,7 @@ const Home = () => {
     if (!visitCountUserId) {
       localStorage.setItem(
         "user_page_token",
-        jwt.sign(
-          "User Visit Page Token",
-          JWT_SIGNATURE || process.env.JWT_SIGNATURE
-        )
+        jwt.sign("User Visit Page Token", process.env.JWT_SIGNATURE)
       );
       visitCount = 18;
       localStorage.setItem("page_view", 18);
