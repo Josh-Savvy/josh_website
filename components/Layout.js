@@ -65,15 +65,14 @@ const Layout = ({ children, activeLink, title }) => {
   return (
     <>
       {head()}
-      <div>
-        <div className="w-full z-50 top-0 py-3 sm:py-5 fixed bg-sky-600 shadow-lg">
+      <div className="">
+        <div className="w-full z-50 top-3 py-2 fixed">
           <div className="container flex items-center justify-between">
             <div>
               <Link href="/">
                 <a>
-                  <span className="text-white text-4xl font-bold">
-                    JOSH
-                    <span className="text-3xl text-lime-400">.</span>
+                  <span className="text-black font-bold text-lg">
+                    Joshua Joseph
                   </span>
                 </a>
               </Link>
@@ -81,73 +80,63 @@ const Layout = ({ children, activeLink, title }) => {
             <div className="hidden lg:block">
               <ul className="flex items-center">
                 <li className="group pl-6">
-                  <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
-                    <Link href="/about">About</Link>
-                  </span>
-
                   <span
                     className={
                       activeLink === "about"
-                        ? "block h-0.5 w-full bg-yellow"
-                        : "block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
                     }
-                  ></span>
+                  >
+                    <Link href="/about">About</Link>
+                  </span>
                 </li>
 
                 <li className="group pl-6">
-                  <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
-                    <Link href="/techstack">Tech-Stack</Link>
-                  </span>
-
                   <span
                     className={
                       activeLink === "tech-stack"
-                        ? "block h-0.5 w-full bg-yellow"
-                        : "block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
                     }
-                  ></span>
+                  >
+                    <Link href="/techstack">Tech-Stack</Link>
+                  </span>
                 </li>
 
                 <li className="group pl-6">
-                  <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
-                    <Link href="/projects">Projects</Link>
-                  </span>
-
                   <span
                     className={
                       activeLink === "projects"
-                        ? "block h-0.5 w-full bg-yellow"
-                        : "block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
                     }
-                  ></span>
+                  >
+                    <Link href="/projects">Projects</Link>
+                  </span>
                 </li>
 
                 <li className="group pl-6">
-                  <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
-                    <Link href="/experience">Experience</Link>
-                  </span>
-
                   <span
                     className={
                       activeLink === "experience"
-                        ? "block h-0.5 w-full bg-yellow"
-                        : "block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
                     }
-                  ></span>
+                  >
+                    <Link href="/experience">Experience</Link>
+                  </span>
                 </li>
 
                 <li className="group pl-6">
-                  <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
-                    <Link href="/contact">Contact</Link>
-                  </span>
-
                   <span
                     className={
                       activeLink === "contact"
-                        ? "block h-0.5 w-full bg-yellow"
-                        : "block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
                     }
-                  ></span>
+                  >
+                    <Link href="/contact">Contact</Link>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -181,7 +170,7 @@ const Layout = ({ children, activeLink, title }) => {
 
             <ul className="mt-8 flex flex-col">
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
+                <span className="cursor-pointer pt-0.5 font-header text-black">
                   <Link href="/about">About</Link>
                 </span>
 
@@ -194,7 +183,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
+                <span className="cursor-pointer pt-0.5 font-header text-black">
                   <Link href="/techstack">tech-stack</Link>
                 </span>
 
@@ -207,7 +196,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
+                <span className="cursor-pointer pt-0.5 font-header text-black">
                   <Link href="/projects">projects</Link>
                 </span>
 
@@ -220,7 +209,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
+                <span className="cursor-pointer pt-0.5 font-header text-black">
                   <Link href="/experience">experience</Link>
                 </span>
 
@@ -233,7 +222,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header font-bold uppercase text-white">
+                <span className="cursor-pointer pt-0.5 font-header text-black">
                   <Link href="/contact">contact</Link>
                 </span>
 
