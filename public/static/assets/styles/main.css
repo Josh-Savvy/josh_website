@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* background: #ececec; */
+  /* background-color: #333; */
+}
+
 .hero_component {
   height: 91vh;
 }
@@ -10,4 +15,21 @@
   .hero_component {
     height: 92.85vh;
   }
+}
+
+.stack_dropdown_btn {
+  display: inline-block;
+}
+
+.stack_dropdown_btn .stack_dropdown {
+  visibility: hidden;
+  width: 120px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.stack_dropdown_btn:hover .stack_dropdown {
+  visibility: visible;
+  opacity: 1;
 }

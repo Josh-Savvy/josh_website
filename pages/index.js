@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Hero from "../components/Hero";
+import Hero from "../components/Home/Hero";
 import Layout from "../components/Layout";
 import jwt from "jsonwebtoken";
 import { JWT_SIGNATURE } from "../config";
+import ReviewCard from "../components/Home/ReviewCard";
+import RecentProjectsCard from "../components/Home/RecentProjectsCard";
 
 const Home = () => {
   const [viewCounts, setViewCounts] = useState(0);
@@ -30,8 +32,15 @@ const Home = () => {
   // }, []);
 
   return (
+<<<<<<< HEAD
     <Layout title="Homepage">
       <Hero />
+=======
+    <Layout title="Homepage" footer={true}>
+      <Hero viewCounts={viewCounts} />
+      <ReviewCard />
+      <RecentProjectsCard />
+>>>>>>> dev
     </Layout>
   );
 };
