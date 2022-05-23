@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const About = () => {
   const ToolsImage = ({ name, alt }) => {
@@ -14,10 +15,10 @@ const About = () => {
     );
   };
   return (
-    <Layout activeLink="about" title="About">
+    <Layout activeLink="about" title="About" footer={true}>
       <>
         <div>
-          <div className="md:flex mt-24">
+          <div className="md:flex justify-center mt-24">
             <div className="flex justify-center">
               <img
                 src="/static/assets/img/blog-author.jpg"
@@ -27,7 +28,7 @@ const About = () => {
             </div>
             <div className="">
               <div className="dark:text-zinc-200 text-zinc-800 px-5">
-                <h1 className="md:text-3xl text-xl font-bold mb-2">
+                <h1 className="md:text-3xl text-xl font-bold mb-2 md:mt-0 mt-5">
                   Joshua Joseph O.
                 </h1>
                 <p className="mb-2">
@@ -60,7 +61,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="mb-10 mt-16 border-t dark:border-zinc-700 border-zinc-300">
+          <div className="mb-10 mt-12 md:mt-16 border-t dark:border-zinc-700 border-zinc-300">
             <div className="mt-4 p-1 px-3 dark:text-zinc-200">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,9 +84,11 @@ const About = () => {
               </p>
             </div>
             <div className="flex justify-center mt-10">
-              <span className="bg-yellow-600 p-3 px-4 text-white rounded-md">
-                View Projects
-              </span>
+              <Link href="/projects">
+                <span className="bg-yellow-600 hover:bg-yellow-700 duration-200 hover:cursor-pointer p-3 px-4 text-white rounded-md">
+                  View Projects
+                </span>
+              </Link>
             </div>
           </div>
         </div>

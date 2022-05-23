@@ -2,100 +2,77 @@ import React from "react";
 import Layout from "../components/Layout";
 
 const Projects = () => {
+  const ProjectImageCard = ({ title, imgSrc, stack, link }) => {
+    const handleStackDropdown = () => {
+      if (document.getElementById("stack_dropdown").style.opacity == 0) {
+        document.getElementById("stack_dropdown").style.opacity = 1;
+      } else {
+        document.getElementById("stack_dropdown").style.opacity = 0;
+      }
+    };
+    return (
+      <>
+        <div className="mb-7">
+          <img
+            src={`/static/assets/img/${imgSrc}.jpg`}
+            className="rounded-xl w-80 mb-4 h-52"
+            alt=""
+          />
+          <div className="">
+            <h1 className="text-lg pl-3 font-semibold">{title}</h1>
+            <div className="flex justify-between px-7 relative">
+              <span className="hover:cursor-pointer select-none stack_dropdown_btn">
+                <i className="bx bxs-layer bx-fw"></i>Stack
+                <ul className="absolute bg-gray-800 top-7 rounded stack_dropdown">
+                  {stack &&
+                    stack.map((s, i) => (
+                      <li
+                        className="hove:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-4"
+                        key={i}
+                      >
+                        {s}
+                      </li>
+                    ))}
+                </ul>
+              </span>
+              <a
+                href={link ? `https://${link}` : "/"}
+                target="_blank"
+                className="hover:cursor-pointer select-none"
+              >
+                <i className="bx-fw bx bx-link-external"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  };
   return (
-    <Layout activeLink="projects">
-      <div>
-        <div className="container py-16 md:py-20" id="portfolio">
-          <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            Notable projects I've worked on
-          </h3>
-
-          <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-            <a
-              href="http://shopable-app.herokuapp.com/"
-              target="_blank"
-              className=""
-            >
-              <div className="bg-sky-50 shadow-lg rounded-md p-5 mx-auto transform transition-all md:hover:scale-105 md:mx-0">
-                <img
-                  src="/static/assets/img/shopable.jpg"
-                  className="w-full shadow"
-                  alt="shopable-app"
-                />
-
-                <div className="">
-                  <p className="font-semibold mt-2 text-xl text-center">
-                    Shopable App
-                  </p>
-                  <p className="text-gray-400 mt-1 text-center">
-                    React | Redux | NodeJS | MongoDB | Bootstrap
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://www.enrolledagent.com/"
-              target="_blank"
-              className=""
-            >
-              {" "}
-              <div className="bg-sky-50 shadow-lg rounded-md p-5 mx-auto transform transition-all md:hover:scale-105 md:mx-0">
-                <img
-                  src="/static/assets/img/enrolled.jpg"
-                  className="w-full shadow"
-                  alt="enrolled-agent"
-                />
-
-                <div className="">
-                  <p className="font-semibold mt-2 text-xl text-center">
-                    Enrolled Agents
-                  </p>
-                  <p className="text-gray-400 mt-1 text-center">
-                    NextJS | React | Redux | NodeJS | MySQL | Bootstrap
-                  </p>
-                </div>
-              </div>{" "}
-            </a>
-            <a
-              href="https://socialmed.netlify.app/"
-              target="_blank"
-              className=""
-            >
-              <div className="bg-sky-50 shadow-lg rounded-md p-5 mx-auto transform transition-all md:mx-0">
-                <span className="flex w-full justify-between">
-                  <span
-                    className="w-3/4 shadow -ml-3 h-full duration-500"
-                    title="Web view"
-                  >
-                    <img
-                      src="/static/assets/img/socialmed.jpg"
-                      alt="social-media-app"
-                    />
-                  </span>
-                  <span
-                    className="w-1/4 md:ml-5 h-full ml-3 shadow duration-500"
-                    title="Mobile view"
-                  >
-                    <img
-                      src="/static/assets/img/socialmed-mobileview.jpg"
-                      alt="social-media-app"
-                    />
-                  </span>
-                </span>
-
-                <div className="">
-                  <p className="font-semibold mt-2 text-xl text-center">
-                    Social Media App
-                  </p>
-                  <p className="text-gray-400 mt-1 text-center">
-                    NextJS | React | Tailwindcss
-                  </p>
-                  <span className="text-sm text-gray-500">
-                    (Still under development...)
-                  </span>
-                </div>
-              </div>
-            </a>
+    <Layout activeLink="projects" footer={true} title="Projects">
+      <div className="mt-20 mb-28 text-zinc-800 dark:text-zinc-200 duration-200">
+        <h1 className="md:text-2xl text-xl font-bold mb-5 flex justify-center">
+          Projects I've worked on
+        </h1>
+        <div className="flex justify-center">
+          <div className="md:grid grid-cols-3 gap-4 border-t pt-12 dark:border-zinc-800 border-gray-300">
+            <ProjectImageCard
+              imgSrc="enrolled"
+              title="Enrolled Agent - Ecommerce"
+              link="enrolledagent.com"
+              stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
+            />
+            <ProjectImageCard
+              imgSrc="shopable"
+              title="Shopable - Ecommerce"
+              link="shopable.herokuapp.com"
+              stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
+            />
+            <ProjectImageCard
+              imgSrc="socialmed"
+              title="Social Media App"
+              link="socialmed.netlify.app"
+            />
           </div>
         </div>
       </div>

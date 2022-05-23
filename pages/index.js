@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import jwt from "jsonwebtoken";
 import { JWT_SIGNATURE } from "../config";
 import ReviewCard from "../components/Home/ReviewCard";
-import RecentProjects from "../components/Home/RecentProjects";
+import RecentProjectsCard from "../components/Home/RecentProjectsCard";
 
 const Home = () => {
   const [viewCounts, setViewCounts] = useState(0);
@@ -35,10 +35,10 @@ const Home = () => {
   }, []);
 
   return (
-    <Layout title="Homepage">
+    <Layout title="Homepage" footer={true}>
       <Hero viewCounts={viewCounts} />
       <ReviewCard />
-      <RecentProjects />
+      <RecentProjectsCard />
     </Layout>
   );
 };

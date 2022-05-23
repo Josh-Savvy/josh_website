@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 
-const Layout = ({ children, activeLink, title }) => {
+const Layout = ({ children, activeLink, title, footer }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const head = () => (
     <>
@@ -76,18 +76,6 @@ const Layout = ({ children, activeLink, title }) => {
                     }
                   >
                     <Link href="/about">About</Link>
-                  </span>
-                </li>
-
-                <li className="group pl-6">
-                  <span
-                    className={
-                      activeLink === "tech-stack"
-                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
-                    }
-                  >
-                    <Link href="/techstack">Tech-Stack</Link>
                   </span>
                 </li>
 
@@ -179,19 +167,7 @@ const Layout = ({ children, activeLink, title }) => {
                   }
                 ></span>
               </li>
-              <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
-                  <Link href="/techstack">tech-stack</Link>
-                </span>
 
-                <span
-                  className={
-                    activeLink === "tech-stack"
-                      ? "block h-0.5 w-1/2 bg-yellow"
-                      : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
-                  }
-                ></span>
-              </li>
               <li className="group pl-6 p-3">
                 <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/projects">projects</Link>
@@ -236,36 +212,38 @@ const Layout = ({ children, activeLink, title }) => {
         </div>
       </div>
       <div className="md:px-24 px-5">{children}</div>
-      <div className="dark:bg-black duration-300 bg-zinc-300 p-4 md:px-12 w-full flex justify-center dark:text-zinc-200 text-zinc-800">
-        <div className="text-2xl font-semibold">
-          Let's Connect
-          <div className="flex justify-between">
-            <a href="https://linkedin.com/in/joshua-joseph28" target="_blank">
-              <div title="LinkedIn" className="text-3xl">
-                <i className="bx bxl-linkedin-square"></i>
-              </div>
-            </a>
 
-            <a href="/" target="_blank">
-              <div title="WhatsApp" className="text-3xl">
-                <i className="bx bxl-whatsapp"></i>
-              </div>
-            </a>
+      {footer && (
+        <div className="dark:bg-black duration-300 bg-zinc-300 p-4 md:px-12 w-full flex justify-center dark:text-zinc-200 text-zinc-800">
+          <div className="text-2xl font-semibold">
+            Let's Connect
+            <div className="flex justify-between">
+              <a href="https://linkedin.com/in/joshua-joseph28" target="_blank">
+                <div title="LinkedIn" className="text-3xl">
+                  <i className="bx bxl-linkedin-square"></i>
+                </div>
+              </a>
 
-            <a href="https://josh-web.herokuapp.com" target="_blank">
-              <div title="Website" className="text-3xl">
-                <i className="bx bxl-dribbble"></i>
-              </div>
-            </a>
+              <a href="https://wa.me/+2348111994693" target="_blank">
+                <div title="WhatsApp" className="text-3xl">
+                  <i className="bx bxl-whatsapp"></i>
+                </div>
+              </a>
 
-            <a href="mailto:joshtee28@gmail.com" target="_blank">
-              <div title="Email" className="text-3xl">
-                <i className="bx bx-envelope"></i>
-              </div>
-            </a>
+              <a href="https://josh-web.herokuapp.com" target="_blank">
+                <div title="Website" className="text-3xl">
+                  <i className="bx bxl-dribbble"></i>
+                </div>
+              </a>
+
+              <a href="mailto:joshtee28@gmail.com" target="_blank">
+                <div title="Email" className="text-3xl">
+                  <i className="bx bx-envelope"></i>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        {/* <div className="md:block hidden hover:cursor-pointer select-none">
+          {/* <div className="md:block hidden hover:cursor-pointer select-none">
           Back to top
           <i className="bx bx-fw bxs-up-arrow-alt text-indigo-500"></i>
         </div>
@@ -274,7 +252,8 @@ const Layout = ({ children, activeLink, title }) => {
             <i className="bx bx-fw bxs-up-arrow-alt bx-fade-up -mb-2 text-indigo-500"></i>
           </div>
         </div> */}
-      </div>
+        </div>
+      )}
     </>
   );
 };
