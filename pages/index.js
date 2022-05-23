@@ -32,15 +32,10 @@ const Home = () => {
   // }, []);
 
   return (
-<<<<<<< HEAD
-    <Layout title="Homepage">
-      <Hero />
-=======
     <Layout title="Homepage" footer={true}>
       <Hero viewCounts={viewCounts} />
       <ReviewCard />
       <RecentProjectsCard />
->>>>>>> dev
     </Layout>
   );
 };
