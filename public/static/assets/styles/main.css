@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: #ececec;
+html {
+  /* background: #ececec; */
+  /* background-color: #333; */
 }
 
 .hero_component {

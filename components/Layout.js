@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import React, { useState } from "react";
+import ThemeToggleBtn from "./ThemeToggleBtn";
 
 const Layout = ({ children, activeLink, title }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -44,34 +45,21 @@ const Layout = ({ children, activeLink, title }) => {
           href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
           rel="stylesheet"
         />
-        <link
-          crossOrigin="anonymous"
-          href="/static/assets/styles/main.min.css"
-          rel="stylesheet"
-        />
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" />
       </Head>
     </>
   );
-
-  const toggleMobileMenu = (value) => {
-    if (value === "open") {
-      setMobileMenu(true);
-    }
-    if (value === "close") {
-      setMobileMenu(false);
-    }
-  };
 
   return (
     <>
       {head()}
       <div className="">
-        <div className="w-full z-50 top-3 py-2 fixed">
+        <div className="w-full z-50 top-0 bg-gray-200 duration-300 dark:bg-zinc-900 dark:shadow-zinc-800 shadow py-2 pt-7 px-5 md:px-24 fixed">
           <div className="container flex items-center justify-between">
             <div>
               <Link href="/">
                 <a>
-                  <span className="text-black font-bold text-lg">
+                  <span className="text-black dark:text-white font-bold text-lg">
                     Joshua Joseph
                   </span>
                 </a>
@@ -83,8 +71,8 @@ const Layout = ({ children, activeLink, title }) => {
                   <span
                     className={
                       activeLink === "about"
-                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
+                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
                     }
                   >
                     <Link href="/about">About</Link>
@@ -95,8 +83,8 @@ const Layout = ({ children, activeLink, title }) => {
                   <span
                     className={
                       activeLink === "tech-stack"
-                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
+                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
                     }
                   >
                     <Link href="/techstack">Tech-Stack</Link>
@@ -107,8 +95,8 @@ const Layout = ({ children, activeLink, title }) => {
                   <span
                     className={
                       activeLink === "projects"
-                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
+                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
                     }
                   >
                     <Link href="/projects">Projects</Link>
@@ -119,8 +107,8 @@ const Layout = ({ children, activeLink, title }) => {
                   <span
                     className={
                       activeLink === "experience"
-                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
+                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
                     }
                   >
                     <Link href="/experience">Experience</Link>
@@ -131,18 +119,27 @@ const Layout = ({ children, activeLink, title }) => {
                   <span
                     className={
                       activeLink === "contact"
-                        ? "cursor-pointer pt-0.5 font-header text-yellow-500"
-                        : "cursor-pointer pt-0.5 font-header text-black duration-200 hover:text-yellow-500"
+                        ? "cursor-pointer pt-0.5 font-header dark:text-white text-yellow-500 dark:text-yellow-500"
+                        : "cursor-pointer pt-0.5 font-header dark:text-white text-black duration-200 dark:hover:text-yellow-500 hover:text-yellow-500"
                     }
                   >
                     <Link href="/contact">Contact</Link>
                   </span>
                 </li>
+                <li className="absolute right-0">
+                  <ThemeToggleBtn />
+                </li>
               </ul>
             </div>
-            <div className="block lg:hidden">
-              <button onClick={() => toggleMobileMenu("open")}>
-                <i className="bx bx-menu text-4xl text-white"></i>
+            <div className="block lg:hidden relative">
+              <div className="absolute right-4 -top-3">
+                <ThemeToggleBtn />
+              </div>
+              <button
+                onClick={() => setMobileMenu(true)}
+                className="absolute right-0 -top-6"
+              >
+                <i className="bx bx-menu text-4xl dark:text-white text-black"></i>
               </button>
             </div>
           </div>
@@ -154,12 +151,12 @@ const Layout = ({ children, activeLink, title }) => {
               ? "opacity-100 pointer-events-auto fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
               : "pointer-events-none opacity-0 fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
           }
-          onClick={() => toggleMobileMenu("close")}
+          onClick={() => setMobileMenu(false)}
         >
           <div className="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3">
             <button
               className="absolute top-0 right-0 mt-4 mr-4"
-              onClick={() => toggleMobileMenu("close")}
+              onClick={() => setMobileMenu(false)}
             >
               <img
                 src="/static/assets/svgs/icon-close.svg"
@@ -170,7 +167,7 @@ const Layout = ({ children, activeLink, title }) => {
 
             <ul className="mt-8 flex flex-col">
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header text-black">
+                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/about">About</Link>
                 </span>
 
@@ -183,7 +180,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header text-black">
+                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/techstack">tech-stack</Link>
                 </span>
 
@@ -196,7 +193,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header text-black">
+                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/projects">projects</Link>
                 </span>
 
@@ -209,7 +206,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header text-black">
+                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/experience">experience</Link>
                 </span>
 
@@ -222,7 +219,7 @@ const Layout = ({ children, activeLink, title }) => {
                 ></span>
               </li>
               <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header text-black">
+                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
                   <Link href="/contact">contact</Link>
                 </span>
 
@@ -238,7 +235,46 @@ const Layout = ({ children, activeLink, title }) => {
           </div>
         </div>
       </div>
-      <div className="">{children}</div>
+      <div className="md:px-24 px-5">{children}</div>
+      <div className="dark:bg-black duration-300 bg-zinc-300 p-4 md:px-12 w-full flex justify-center dark:text-zinc-200 text-zinc-800">
+        <div className="text-2xl font-semibold">
+          Let's Connect
+          <div className="flex justify-between">
+            <a href="https://linkedin.com/in/joshua-joseph28" target="_blank">
+              <div title="LinkedIn" className="text-3xl">
+                <i className="bx bxl-linkedin-square"></i>
+              </div>
+            </a>
+
+            <a href="/" target="_blank">
+              <div title="WhatsApp" className="text-3xl">
+                <i className="bx bxl-whatsapp"></i>
+              </div>
+            </a>
+
+            <a href="https://josh-web.herokuapp.com" target="_blank">
+              <div title="Website" className="text-3xl">
+                <i className="bx bxl-dribbble"></i>
+              </div>
+            </a>
+
+            <a href="mailto:joshtee28@gmail.com" target="_blank">
+              <div title="Email" className="text-3xl">
+                <i className="bx bx-envelope"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {/* <div className="md:block hidden hover:cursor-pointer select-none">
+          Back to top
+          <i className="bx bx-fw bxs-up-arrow-alt text-indigo-500"></i>
+        </div>
+        <div className="md:hidden block bg-zinc-900 rounded">
+          <div className="bg-zinc-900 text-2xl rounded">
+            <i className="bx bx-fw bxs-up-arrow-alt bx-fade-up -mb-2 text-indigo-500"></i>
+          </div>
+        </div> */}
+      </div>
     </>
   );
 };
