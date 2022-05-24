@@ -64,23 +64,19 @@ const About = () => {
           <div className="mb-10 mt-12 md:mt-16 border-t dark:border-zinc-700 border-zinc-300">
             <div className="mt-4 p-1 px-3 dark:text-zinc-200">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium saepe reprehenderit rem cumque quidem nostrum, autem
-                neque quia inventore nisi assumenda iure exercitationem. Maiores
-                recusandae a incidunt ipsum animi explicabo. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Laudantium saepe
-                reprehenderit rem cumque quidem nostrum, autem neque quia
-                inventore nisi assumenda iure exercitationem. Maiores recusandae
-                a incidunt ipsum animi explicabo. <br />
+                I'm an innovative software developer with 2+ years of experience
+                managing aspects of the development process and developing
+                dynamic web applications for small to medium-sized companies,
+                transforming the way brands interact with audiences through
+                creation of digital contents.
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Debitis deserunt officia eaque laboriosam incidunt quod ipsum
-                natus nisi consequatur quisquam officiis accusamus expedita a
-                ut, eum earum modi ipsam nostrum! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Magnam consequatur cum et velit
-                molestiae expedita temporibus debitis recusandae molestias
-                facilis dignissimos corrupti voluptas repellendus totam
-                blanditiis quaerat excepturi, iusto incidunt.
+                <br />I am confident in my ability and I'm extremely motivated
+                to constantly develop my skills and grow professionally. While I
+                have a preferred technology stack, eventually I select the most
+                excellent innovations for the work at hand and utilize my
+                experience to recognize significant design patterns. I'm also an
+                entrepreneur and a collaborative team player with excellent
+                technical abilities.
               </p>
             </div>
             <div className="flex justify-center mt-10">
