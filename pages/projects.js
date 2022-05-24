@@ -65,13 +65,14 @@ const Projects = () => {
             <ProjectImageCard
               imgSrc="shopable"
               title="Shopable - Ecommerce"
-              link="shopable.herokuapp.com"
-              stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
+              link="shopable-app.herokuapp.com"
+              stack={["React", "NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
               imgSrc="socialmed"
               title="Social Media App"
               link="socialmed.netlify.app"
+              stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
             />
           </div>
         </div>

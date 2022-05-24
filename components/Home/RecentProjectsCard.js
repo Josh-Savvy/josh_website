@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -7,13 +8,15 @@ const RecentProjects = () => {
         <h1 className="dark:text-white text-zinc-900 font-bold md:text-3xl text-xl">
           Recent Projects
         </h1>
-        <span className="text-md flex justify-between font-bold dark:text-zinc-200 text-black hover:cursor-pointer">
-          <p className="">View more</p>
-          <i
-            className="bx bxs-right-arrow bxs-like bx-fade-right"
-            style={{ marginTop: "5px" }}
-          ></i>
-        </span>
+        <Link href="/projects">
+          <span className="text-md flex justify-between font-bold dark:text-zinc-200 text-black hover:cursor-pointer">
+            <p className="">View more</p>
+            <i
+              className="bx bxs-right-arrow bxs-like bx-fade-right"
+              style={{ marginTop: "5px" }}
+            ></i>
+          </span>
+        </Link>
       </div>
       <div className="md:grid grid-cols-2 p-2">
         <div className="px-3">
@@ -24,7 +27,9 @@ const RecentProjects = () => {
               alt=""
             />
             <div className="mt-2 dark:text-zinc-200 text-zinc-800 ">
-              <p className="font-semibold md:text-lg text-md">Enrolled Agent -Ecommerce app</p>
+              <p className="font-semibold md:text-lg text-md">
+                Enrolled Agent -Ecommerce app
+              </p>
               <div className="flex justify-between md:w-2/3">
                 <span className="hover:cursor-pointer">
                   <i className="bx bxs-layer bx-fw"></i>Stack
@@ -47,7 +52,9 @@ const RecentProjects = () => {
               alt=""
             />
             <div className="mt-2 dark:text-zinc-200 text-zinc-800 ">
-              <p className="font-semibold md:text-lg text-md">Shopable -Ecommerce app</p>
+              <p className="font-semibold md:text-lg text-md">
+                Shopable -Ecommerce app
+              </p>
               <div className="flex justify-between md:w-2/3">
                 <span className="hover:cursor-pointer">
                   <i className="bx bxs-layer bx-fw"></i>Stack

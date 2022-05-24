@@ -25,7 +25,7 @@ const ThemeToggleBtn = () => {
   };
 
   return (
-    <div className="flex justify-between mr-8 -mt-3">
+    <div className="flex justify-between mr-8 -mt-3 animate-pulse">
       <div
         className="hover:cursor-pointer bg-zinc-600 rounded-full px-2 p-1 dark:block hidden"
         onClick={(e) => handleToggleState(e, "light_mode")}

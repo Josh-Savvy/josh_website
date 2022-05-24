@@ -1,7 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
+import Router from "next/router";
 import React, { useState } from "react";
 import ThemeToggleBtn from "./ThemeToggleBtn";
+import nProgress from "nprogress";
+
+Router.onRouteChangeStart = (url) => nProgress.start();
+Router.onRouteChangeComplete = (url) => nProgress.done();
+Router.onRouteChangeError = (url) => nProgress.done();
 
 const Layout = ({ children, activeLink, title, footer }) => {
   const [mobileMenu, setMobileMenu] = useState(false);

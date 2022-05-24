@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import "../public/static/assets/styles/main.css";
+import "../public/static/assets/css/main.css";
+import "../public/static/assets/css/globals.css";
+import "nprogress/nprogress.css";
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (window) {
