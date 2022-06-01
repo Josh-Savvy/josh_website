@@ -4,6 +4,7 @@ import Router from "next/router";
 import React, { useState } from "react";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 import nProgress from "nprogress";
+import SideBar from "./SideBar";
 
 Router.onRouteChangeStart = (url) => nProgress.start();
 Router.onRouteChangeComplete = (url) => nProgress.done();
@@ -60,7 +61,7 @@ const Layout = ({ children, activeLink, title, footer }) => {
     <>
       {head()}
       <div className="">
-        <div className="w-full z-50 top-0 bg-gray-200 duration-300 dark:bg-zinc-900 dark:shadow-zinc-800 shadow py-2 pt-7 px-5 md:px-24 fixed">
+        <div className="w-full top-0 bg-gray-200 duration-300 dark:bg-zinc-900 dark:shadow-zinc-800 shadow py-2 pt-7 px-5 md:px-24 fixed">
           <div className="container flex items-center justify-between">
             <div>
               <Link href="/">
@@ -139,88 +140,16 @@ const Layout = ({ children, activeLink, title, footer }) => {
           </div>
         </div>
 
-        <div
-          className={
-            mobileMenu
-              ? "opacity-100 pointer-events-auto fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
-              : "pointer-events-none opacity-0 fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 transition-opacity lg:hidden"
-          }
-          onClick={() => setMobileMenu(false)}
-        >
-          <div className="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3">
-            <button
-              className="absolute top-0 right-0 mt-4 mr-4"
-              onClick={() => setMobileMenu(false)}
-            >
-              <img
-                src="/static/assets/svgs/icon-close.svg"
-                className="h-10 w-auto"
-                alt=""
-              />
-            </button>
-
-            <ul className="mt-8 flex flex-col">
-              <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
-                  <Link href="/about">About</Link>
-                </span>
-
-                <span
-                  className={
-                    activeLink === "about"
-                      ? "block h-0.5 w-1/2 bg-yellow"
-                      : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
-                  }
-                ></span>
-              </li>
-
-              <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
-                  <Link href="/projects">projects</Link>
-                </span>
-
-                <span
-                  className={
-                    activeLink === "projects"
-                      ? "block h-0.5 w-1/2 bg-yellow"
-                      : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
-                  }
-                ></span>
-              </li>
-              <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
-                  <Link href="/experience">experience</Link>
-                </span>
-
-                <span
-                  className={
-                    activeLink === "experience"
-                      ? "block h-0.5 w-1/2 bg-yellow"
-                      : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
-                  }
-                ></span>
-              </li>
-              <li className="group pl-6 p-3">
-                <span className="cursor-pointer pt-0.5 font-header dark:text-white text-black">
-                  <Link href="/contact">contact</Link>
-                </span>
-
-                <span
-                  className={
-                    activeLink === "contact"
-                      ? "block h-0.5 w-1/2 bg-yellow"
-                      : "block h-0.5 w-1/2 bg-transparent group-hover:bg-yellow"
-                  }
-                ></span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <SideBar
+          mobileMenu={mobileMenu}
+          setMobileMenu={setMobileMenu}
+          activeLink={activeLink}
+        />
       </div>
       <div className="md:px-24 px-5">{children}</div>
 
       {footer && (
-        <div className="dark:bg-black duration-300 bg-zinc-300 p-4 md:px-12 w-full flex justify-center dark:text-zinc-200 text-zinc-800">
+        <div className="bg-black duration-300 p-4 md:px-12 w-full flex justify-center text-zinc-200">
           <div className="text-2xl font-semibold">
             Let's Connect
             <div className="flex justify-between">

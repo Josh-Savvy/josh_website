@@ -12,7 +12,7 @@ const Hero = ({ viewCounts }) => {
     }, 3000);
   return (
     <>
-      <div className="relative md:mt-40 flex justify-center">
+      <div className="relative md:mt-40 flex justify-center" style={{zIndex:"-1"}}>
         {showAlert && (
           <div className="absolute md:-top-20 top-20" style={{ zIndex: "100" }}>
             <div
@@ -39,8 +39,8 @@ const Hero = ({ viewCounts }) => {
             </div>
           </div>
         )}
-        <div className="md:grid grid-cols-2">
-          <div className="relative md:top-20 top-80 mt-8 md:-mt-4">
+        <div className="md:grid grid-cols-2" style={{ zIndex: "-1" }}>
+          <div className="relative md:top-20 top-80 mt-8 md:-mt-4" style={{ zIndex: "-1" }}>
             <h1 className="font-semibold text-lg md:block hidden text-gray-600 dark:text-gray-300 mt-2 mb-3">
               Hello!
             </h1>

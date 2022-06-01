@@ -13,7 +13,7 @@ const RecentProjects = () => {
             <p className="">View more</p>
             <i
               className="bx bxs-right-arrow bxs-like bx-fade-right"
-              style={{ marginTop: "5px" }}
+              style={{ marginTop: "5px",zIndex: "-100"  }}
             ></i>
           </span>
         </Link>
