@@ -61,7 +61,7 @@ const Layout = ({ children, activeLink, title, footer }) => {
     <>
       {head()}
       <div className="">
-        <div className="w-full top-0 bg-gray-200 duration-300 dark:bg-zinc-900 dark:shadow-zinc-800 shadow py-2 pt-7 px-5 md:px-24 fixed">
+        <div style={{ zIndex: 100 }} className="w-full top-0 bg-gray-200 duration-300 dark:bg-zinc-900 dark:shadow-zinc-800 shadow py-2 pt-7 px-5 md:px-24 fixed">
           <div className="container flex items-center justify-between">
             <div>
               <Link href="/">

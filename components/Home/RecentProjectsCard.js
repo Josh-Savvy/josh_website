@@ -35,7 +35,7 @@ const RecentProjects = () => {
                   <i className="bx bxs-layer bx-fw"></i>Stack
                 </span>
                 <span className="absolute top-0 opacity-0 hover:opacity-100 cursor-pointer pt-10">
-                  <ul className="text-sm md:text-md bg-gray-800 p-3 px-5 rounded">
+                  <ul className="text-sm md:text-md bg-gray-800 bg-gray text-white p-3 px-5 rounded">
                     <li>NextJS</li>
                     <li>Node</li>
                     <li>React</li>
@@ -71,7 +71,7 @@ const RecentProjects = () => {
                   <i className="bx bxs-layer bx-fw"></i>Stack
                 </span>
                 <span className="absolute top-0 opacity-0 hover:opacity-100 cursor-pointer pt-10">
-                  <ul className="text-sm md:text-md bg-gray-800 p-3 px-5 rounded">
+                  <ul className="text-sm md:text-md text-white bg-gray-800 p-3 px-5 rounded">
                     <li>React </li>
                     <li>NextJS</li>
                     <li>NodeJS</li>

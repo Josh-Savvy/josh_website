@@ -5,10 +5,11 @@ const SideBar = ({ mobileMenu, setMobileMenu, activeLink }) => {
     <div
       className={
         mobileMenu
-          ? "opacity-100 pointer-events-auto fixed inset-0 z-100 min-h-screen bg-black bg-opacity-80 transition-opacity lg:hidden"
+          ? "opacity-100 pointer-events-auto fixed inset-0 min-h-screen bg-black dark:bg-white dark:bg-opacity-10 bg-opacity-80 transition-opacity lg:hidden"
           : "pointer-events-none opacity-0"
       }
       onClick={() => setMobileMenu(false)}
+      style={{zIndex:100}}
     >
       <div
         className="absolute right-0 h-screen w-2/3 bg-zinc-900 py-4 px-8 shadow md:w-1/3"
