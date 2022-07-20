@@ -13,7 +13,7 @@ const Projects = () => {
           />
           <div className="">
             <h1 className="text-lg pl-3 font-semibold">{title}</h1>
-            <div className="flex justify-between px-7 relative">
+            <div className="flex justify-between px-7 relative" style={{ zIndex: -1 }}>
               <span className="hover:cursor-pointer select-none stack_dropdown_btn">
                 <i className="bx bxs-layer bx-fw"></i>Stack
                 <ul className="absolute bg-gray-800 top-7 rounded stack_dropdown">

@@ -12,7 +12,7 @@ const Hero = ({ viewCounts }) => {
     }, 3000);
   return (
     <>
-      <div className="relative md:mt-40 flex justify-center" style={{zIndex:"-1"}}>
+      <div className="relative md:mt-40 flex justify-center">
         {showAlert && (
           <div className="absolute md:-top-20 top-20" style={{ zIndex: "100" }}>
             <div
@@ -62,25 +62,25 @@ const Hero = ({ viewCounts }) => {
               </span>
             </div>
             <div className="">
-              <div className="flex mt-3">
+              <div className="flex mt-3" style={{ zIndex: 100 }}>
                 <p className="font-semibold text-gray-500 dark:text-gray-300">
                   Follow me:{" "}
                 </p>
                 <a
                   href="https://github.com/Josh-Savvy"
                   target="_blank"
-                  className="ml-4  hover:cursor-pointer"
+                  className="ml-4 hover:cursor-pointer"
                 >
                   <i className="bx bxl-github dark:hover:text-white dark:text-gray-300 hover:text-black duration-200 text-2xl text-gray-500" />
                 </a>
                 <a
                   href="https://linkedin.com/in/joshua-joseph28"
                   target="_blank"
-                  className="ml-4  hover:cursor-pointer"
+                  className="ml-4 hover:cursor-pointer"
                 >
                   <i className="bx bxl-linkedin-square dark:hover:text-white dark:text-gray-300 hover:text-black duration-200 text-2xl text-gray-500" />
                 </a>
-                <a href="/" className="ml-4  hover:cursor-pointer">
+                <a href="/" className="ml-4 hover:cursor-pointer">
                   <i className="bx bxl-facebook-square dark:hover:text-white dark:text-gray-300 hover:text-black duration-200 text-2xl text-gray-500" />
                 </a>
               </div>
