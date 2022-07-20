@@ -37,9 +37,11 @@ const RecentProjects = () => {
                 <span className="text-sm hidden">
                   NextJS, React, Node, MySQL, Redux.
                 </span>
-                <span className="hover:cursor-pointer">
-                  <i className="bx bx-fw bx-link-external"></i>Preview
-                </span>
+                <a target="_blank" href='https://enrolledagent.com'>
+                  <span className="hover:cursor-pointer">
+                    <i className="bx bx-fw bx-link-external"></i>Preview
+                  </span>
+                </a>
               </div>
             </div>
           </div>
@@ -62,9 +64,11 @@ const RecentProjects = () => {
                 <span className="text-sm hidden">
                   React, Node, MongoDB, Redux.
                 </span>
-                <span className="hover:cursor-pointer">
-                  <i className="bx bx-fw bx-link-external"></i>Preview
-                </span>
+                <a href="https://shopable-app.com" target="_blank">
+                  <span className="hover:cursor-pointer">
+                    <i className="bx bx-fw bx-link-external"></i>Preview
+                  </span>
+                </a>
               </div>
             </div>
           </div>
