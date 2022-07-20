@@ -150,9 +150,9 @@ const Layout = ({ children, activeLink, title, footer }) => {
 
       {footer && (
         <div className="bg-black duration-300 p-4 md:px-12 w-full flex justify-center text-zinc-200">
-          <div className="text-2xl font-semibold">
+          <div className="text-2xl font-semibold text-center">
             Let's Connect
-            <div className="flex justify-between">
+            <div className="flex justify-between md:gap-12 gap-5">
               <a href="https://linkedin.com/in/joshua-joseph28" target="_blank">
                 <div title="LinkedIn" className="text-3xl">
                   <i className="bx bxl-linkedin-square"></i>

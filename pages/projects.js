@@ -3,6 +3,13 @@ import Layout from "../components/Layout";
 
 const Projects = () => {
   const ProjectImageCard = ({ title, imgSrc, stack, link }) => {
+    const handleStackDropdown = () => {
+      if (document.getElementById("stack_dropdown").style.opacity == 0) {
+        document.getElementById("stack_dropdown").style.opacity = 1;
+      } else {
+        document.getElementById("stack_dropdown").style.opacity = 0;
+      }
+    };
     return (
       <>
         <div className="mb-7">
@@ -13,14 +20,14 @@ const Projects = () => {
           />
           <div className="">
             <h1 className="text-lg pl-3 font-semibold">{title}</h1>
-            <div className="flex justify-between px-7 relative" style={{ zIndex: -1 }}>
+            <div className="flex justify-between px-7 relative">
               <span className="hover:cursor-pointer select-none stack_dropdown_btn">
                 <i className="bx bxs-layer bx-fw"></i>Stack
                 <ul className="absolute bg-gray-800 top-7 rounded stack_dropdown">
                   {stack &&
                     stack.map((s, i) => (
                       <li
-                        className="hover:cursor-default text-zinc-200 p-2 px-4"
+                        className="hove:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-4"
                         key={i}
                       >
                         {s}
@@ -65,7 +72,7 @@ const Projects = () => {
               imgSrc="socialmed"
               title="Social Media App"
               link="socialmed.netlify.app"
-              stack={["NextJS", "NodeJS", "Typescript", "TailwindCSS"]}
+              stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
             />
             <ProjectImageCard
               imgSrc="apex-proj"
@@ -73,7 +80,6 @@ const Projects = () => {
               link="apex-project-test.netlify.app"
               stack={["NextJS", "React", "TailwindCSS"]}
             />
-
           </div>
         </div>
       </div>
@@ -82,3 +88,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

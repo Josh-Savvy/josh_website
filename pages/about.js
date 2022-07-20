@@ -8,7 +8,7 @@ const About = () => {
       <>
         <img
           src={`/static/assets/svgs/${name}.svg`}
-          className="dark:bg-zinc-300 p-1 rounded-lg w-2/4"
+          className="bg-zinc-300 p-1 rounded-lg w-3/4 md:w-2/4"
           alt={alt}
         />
       </>
@@ -35,9 +35,9 @@ const About = () => {
                   Software Developer; based in Lagos, Nigeria.
                 </p>
                 <div className="mb-2">
-                  <p className="text-sm">
-                    Email me:{" "}
-                    <a href="mailto:joshtee28@gmail.com" className="font-bold">
+                  <p className="text-sm text-black dark:text-white">
+                    Send me a mail:{" "}
+                    <a href="mailto:joshtee28@gmail.com" className="font-bold text-blue-500">
                       joshtee28@gmail.com
                     </a>
                   </p>

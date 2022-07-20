@@ -9,7 +9,7 @@ const ExperienceCard = ({ position, imgUrl, company, duration }) => {
       <div className="md:w-2/5">
         <div className="flex justify-center md:justify-start">
           <span className="shrink-0">
-            <img src={imgUrl} className="h-auto w-20 rounded-md" alt="" />
+            <img src={imgUrl} className="h-auto w-20 rounded-md mb-6 md:mb-0" alt="" />
           </span>
           <div className="relative ml-3 hidden w-full md:block">
             <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -21,7 +21,7 @@ const ExperienceCard = ({ position, imgUrl, company, duration }) => {
           <div className="mt-1 flex">
             <i className="bx bxs-right-arrow hidden text-sky-600 md:block"></i>
             <div className="md:-mt-1 md:pl-8">
-              <span className="block font-body font-bold text-grey-40">
+              <span className="block font-body font-bold text-gray-40 dark:text-white">
                 {duration}
               </span>
               <span className="block pt-2 font-header text-xl font-bold text-sky-600">

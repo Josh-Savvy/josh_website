@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <Layout activeLink="contact" title="Contact">
       <>
-        <div className="m-5 mt-28">
+        <div className="mt-28 mb-10">
           <div className="mb-32">
             <h1 className="text-2xl mb-4 font-bold dark:text-white px-3">
               Why hire me?
@@ -43,12 +43,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-yellow-700 p-5 rounded-lg px-4 mb-16">
-            <div className="flex justify-center">
+            <div className="md:flex justify-center">
               <div className="text-white md:flex gap-20">
-                <h1 className="font-semibold md:text-2xl text-xl mb-7">
+                <h1 className="font-semibold md:text-2xl whitespace-nowrap mb-7">
                   Intrested in working with me?
                 </h1>
-                <div className="flex gap-8">
+                <div className="md:flex flex-cols-2 gap-8">
                   <Link href="mailto:joshtee28@gmail.com">
                     <button className="bg-zinc-200 hover:bg-white p-4 duration-200 rounded-lg text-black mb-4 md:mb-0">
                       <i className="bx bx-fw bxs-envelope"></i> Email me
@@ -63,54 +63,51 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between px-20 text-4xl">
-            <p className="text-2xl dark:text-zinc-200">
-              Social links <i className="bx bx-right-arrow-alt"></i>
-            </p>
-            <a
-              href="https://linkedin.com/in/joshua-joseph28"
-              target="_blank"
-              className=""
-            >
-              <div title="LinkedIn" className="text-blue-700 text-4xl">
-                <i className="bx bxl-linkedin-square"></i>
-              </div>
-            </a>
-
-            <a href="https://wa.me/+2348111994693" target="_blank" className="">
-              <div
-                title="WhatsApp"
-                className="dark:text-green-500 text-green-700 text-4xl"
+          <div className="flex justify-between gap-1 text-4xl">
+              <a
+                href="https://linkedin.com/in/joshua-joseph28"
+                target="_blank"
+                className=""
               >
-                <i className="bx bxl-whatsapp"></i>
-              </div>
-            </a>
+                <div title="LinkedIn" className="text-blue-700 text-4xl">
+                  <i className="bx bxl-linkedin-square"></i>
+                </div>
+              </a>
 
-            <a
-              href="https://josh-web.herokuapp.com"
-              target="_blank"
-              className=""
-            >
-              <div
-                title="Website"
-                className="dark:hover:text-yellow-500 dark:text-yellow-700 text-4xl"
-              >
-                <i className="bx bxl-dribbble"></i>
-              </div>
-            </a>
+              <a href="https://wa.me/+2348111994693" target="_blank" className="">
+                <div
+                  title="WhatsApp"
+                  className="dark:text-green-500 text-green-700 text-4xl"
+                >
+                  <i className="bx bxl-whatsapp"></i>
+                </div>
+              </a>
 
-            <a
-              href="https://github.com/Josh-Savyy"
-              target="_blank"
-              className=""
-            >
-              <div
-                title="Github"
-                className="dark:hover:text-yellow-500 dark:text-white text-4xl"
+              <a
+                href="https://josh-web.herokuapp.com"
+                target="_blank"
+                className=""
               >
-                <i className="bx bxl-github"></i>
-              </div>
-            </a>
+                <div
+                  title="Website"
+                  className="dark:hover:text-yellow-500 dark:text-yellow-700 text-4xl"
+                >
+                  <i className="bx bxl-dribbble"></i>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/Josh-Savyy"
+                target="_blank"
+                className=""
+              >
+                <div
+                  title="Github"
+                  className="dark:hover:text-yellow-500 dark:text-white text-4xl"
+                >
+                  <i className="bx bxl-github"></i>
+                </div>
+              </a>
           </div>
         </div>
       </>
