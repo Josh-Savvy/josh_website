@@ -14,7 +14,7 @@ const Projects = () => {
       <>
         <div className="mb-7">
           <img
-            src={`/static/assets/img/${imgSrc}.jpg`}
+            src={`/static/assets/img/${imgSrc}`}
             className="rounded-xl w-80 mb-4 h-52"
             alt=""
           />
@@ -23,11 +23,11 @@ const Projects = () => {
             <div className="flex justify-between px-7 relative">
               <span className="hover:cursor-pointer select-none stack_dropdown_btn">
                 <i className="bx bxs-layer bx-fw"></i>Stack
-                <ul className="absolute bg-gray-800 top-7 rounded stack_dropdown">
+                <ul className="absolute bg-gray-800 top-7 rounded stack_dropdown w-full">
                   {stack &&
                     stack.map((s, i) => (
                       <li
-                        className="hove:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-4"
+                        className="hover:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-10"
                         key={i}
                       >
                         {s}
@@ -57,30 +57,35 @@ const Projects = () => {
         <div className="flex justify-center">
           <div className="md:grid grid-cols-3 gap-4 border-t pt-12 dark:border-zinc-800 border-gray-300">
             <ProjectImageCard
-              imgSrc="enrolled"
+              imgSrc="enrolled.jpg"
               title="Enrolled Agent - Ecommerce"
               link="enrolledagent.com"
               stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
-              imgSrc="shopable"
+              imgSrc="shopable.jpg"
               title="Shopable - Ecommerce"
               link="shopable-app.herokuapp.com"
               stack={["React", "NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
-              imgSrc="socialmed"
+              imgSrc="socialmed.jpg"
               title="Social Media App"
               link="socialmed.netlify.app"
               stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
             />
             <ProjectImageCard
-              imgSrc="apex-proj"
+              imgSrc="apex-proj.jpg"
               title="Apex Project -Landing Page"
               link="apex-project-test.netlify.app"
               stack={["NextJS", "React", "TailwindCSS"]}
             />
-          </div>
+            <ProjectImageCard
+              imgSrc="kachabazar-store.jpg"
+              title="KachaBazzar Store (FE Contract)"
+              link="geolocation-web-store.vercel.app"
+              stack={["NextJS", "React", "TailwindCSS"]}
+            /></div>
         </div>
       </div>
     </Layout>
