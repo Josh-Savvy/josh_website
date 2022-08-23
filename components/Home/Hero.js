@@ -91,14 +91,14 @@ const Hero = ({ viewCounts }) => {
                   <i className="bx-fw bx bx-envelope"></i> Mail Me
                 </a>
 
-                <span
+                {/* <span
                   onClick={handleDownload}
                   className="border border-2 dark:text-white select-none whitespace-nowrap rounded border-yellow-500 md:mt-0 mt-4 py-2 px-3 hover:bg-yellow-500 hover:text-white hover:cursor-pointer duration-200"
                 >
                   <i className="bx-fw bx bxs-download animate-bounce"></i>{" "}
                   Download CV
                   <a id="link" href="/joshcv.pdf" download hidden></a>
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
