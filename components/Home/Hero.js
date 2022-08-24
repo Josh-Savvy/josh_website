@@ -54,9 +54,8 @@ const Hero = ({ viewCounts }) => {
                   <br />
                   <span className="md:text-xl text-lg">A Software Developer</span>
                 </span>
-                <span className="hidden md:block bg-teal-400 animate-pulse p-1 w-40 rounded-lg ml-28 mb-4"></span>
               </div>
-              <span className="text-gray-500 dark:text-gray-300 duration-200 text-sm">
+              <span className="text-gray-500 dark:text-gray-300 duration-200 text-sm mt-1">
                 based in Lagos, Nigeria. I create meaningful solutions, and give your customers optimized user experience.
               </span>
             </div>

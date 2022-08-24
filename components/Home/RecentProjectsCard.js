@@ -28,7 +28,7 @@ const RecentProjects = () => {
             />
             <div className="mt-2 dark:text-zinc-200 text-zinc-800 ">
               <p className="font-semibold md:text-lg text-md">
-                Enrolled Agent -Ecommerce app
+                Enrolled Agent - Ecommerce app
               </p>
               <div className="flex justify-between md:w-2/3 relative">
                 <span className="hover:cursor-pointer">
@@ -57,14 +57,14 @@ const RecentProjects = () => {
         <div className="px-3">
           <div className="p-3">
             <img
-              src="/static/assets/img/shopable.jpg"
+              src="/static/assets/img/ig.png"
               className="rounded-lg"
               alt=""
             />
 
             <div className="mt-2 dark:text-zinc-200 text-zinc-800 ">
               <p className="font-semibold md:text-lg text-md">
-                Shopable -Ecommerce app
+                Instagram Clone App
               </p>
               <div className="flex justify-between md:w-2/3 relative">
                 <span className="hover:cursor-pointer">
@@ -74,12 +74,10 @@ const RecentProjects = () => {
                   <ul className="text-sm md:text-md text-white bg-gray-800 p-3 px-5 rounded">
                     <li>React </li>
                     <li>NextJS</li>
-                    <li>NodeJS</li>
-                    <li>Redux</li>
-                    <li>Bootstrap</li>
+                    <li>Tailwind</li>
                   </ul>
                 </span>
-                <a href="https://shopable-app.com" target="_blank">
+                <a href="https://josh-instagram-clone.vercel.app" target="_blank">
                   <span className="hover:cursor-pointer">
                     <i className="bx bx-fw bx-link-external"></i>Preview
                   </span>

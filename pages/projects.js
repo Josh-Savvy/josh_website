@@ -63,16 +63,28 @@ const Projects = () => {
               stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
+              imgSrc="socialmed.jpg"
+              title="Social Media App"
+              link="socialmed.netlify.app"
+              stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
+            />
+            <ProjectImageCard
+              imgSrc="ig.png"
+              title="Instagram Clone App"
+              link="josh-instagram-clone.vercel.app"
+              stack={["NextJS", "React", "TailwindCSS"]}
+            />
+            <ProjectImageCard
               imgSrc="shopable.jpg"
               title="Shopable - Ecommerce"
               link="shopable-app.herokuapp.com"
               stack={["React", "NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
-              imgSrc="socialmed.jpg"
-              title="Social Media App"
-              link="socialmed.netlify.app"
-              stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
+              imgSrc="kachabazar-store.jpg"
+              title="KachaBazzar Store (FE Contract)"
+              link="geolocation-web-store.vercel.app"
+              stack={["NextJS", "React", "TailwindCSS"]}
             />
             <ProjectImageCard
               imgSrc="apex-proj.jpg"
@@ -80,12 +92,9 @@ const Projects = () => {
               link="apex-project-test.netlify.app"
               stack={["NextJS", "React", "TailwindCSS"]}
             />
-            <ProjectImageCard
-              imgSrc="kachabazar-store.jpg"
-              title="KachaBazzar Store (FE Contract)"
-              link="geolocation-web-store.vercel.app"
-              stack={["NextJS", "React", "TailwindCSS"]}
-            /></div>
+
+
+          </div>
         </div>
       </div>
     </Layout>
