@@ -27,20 +27,21 @@ const Contact = () => {
               <HireCard
                 title="Communicative"
                 def="I believe good communication improves the overall efficiency of processes and projects.
-                 My communication skills are second to none and this has increased client management. 
+                 My communication skills are second to none, and this has increased client management. 
                  I also believe feedback, sharing ideas and knowledge are the keys to effective software development."
               />
               <HireCard
                 title="Professional"
-                def=""
+                def="I understand problems clearly, break them down into hypotheses, and propose solutions in a coherent manner. I understand concepts quickly, or ask the right questions to help make them clear, 
+                and sometimes, I don't even need to have everything written down in a specifications document to develop a software or applications."
               />
               <HireCard
                 title="Collaborative"
-                def=""
+                def="I have worked with companies to produce elegnant and amazing websites for consumers to enjoy."
               />
               <HireCard
                 title="Honest"
-                def=""
+                def="I chose a career in software development because I find satisfaction in helping consumers, companies and organizaions. I provide solutions the need for easy and access."
               />
             </div>
           </div>
