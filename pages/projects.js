@@ -12,7 +12,7 @@ const Projects = () => {
     };
     return (
       <>
-        <div className="mb-7">
+        <div className="mb-7 w-full">
           <img
             src={`/static/assets/img/${imgSrc}`}
             className="rounded-xl w-80 mb-4 h-52"
@@ -27,7 +27,7 @@ const Projects = () => {
                   {stack &&
                     stack.map((s, i) => (
                       <li
-                        className="hover:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-10"
+                        className="hover:bg-zinc-700 hover:cursor-default text-zinc-200 p-2 px-3"
                         key={i}
                       >
                         {s}
@@ -60,37 +60,43 @@ const Projects = () => {
               imgSrc="enrolled.jpg"
               title="Enrolled Agent - Ecommerce"
               link="enrolledagent.com"
-              stack={["NextJS", "NodeJS", "Redux", "Bootstrap"]}
-            />
-            <ProjectImageCard
-              imgSrc="socialmed.jpg"
-              title="Social Media App"
-              link="socialmed.netlify.app"
-              stack={["NextJS", "NodeJS", "Typescript", "Tailwind"]}
+              stack={["NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
               imgSrc="ig.png"
               title="Instagram Clone App"
               link="josh-instagram-clone.vercel.app"
-              stack={["NextJS", "React", "TailwindCSS"]}
+              stack={["React/NextJS", "TailwindCSS"]}
+            />
+            <ProjectImageCard
+              imgSrc="mernprojec.png"
+              title="Blog App - MERN stack"
+              link="mernprojectclient2022.herokuapp.com"
+              stack={["React/NextJS", "Bootstrap", "NodeJS"]}
+            />
+            <ProjectImageCard
+              imgSrc="socialmed.jpg"
+              title="Social Media App"
+              link="socialmed.netlify.app"
+              stack={["NodeJS", "Typescript", "Tailwind"]}
             />
             <ProjectImageCard
               imgSrc="shopable.jpg"
               title="Shopable - Ecommerce"
               link="shopable-app.herokuapp.com"
-              stack={["React", "NextJS", "NodeJS", "Redux", "Bootstrap"]}
+              stack={["React/NextJS", "NodeJS", "Redux", "Bootstrap"]}
             />
             <ProjectImageCard
               imgSrc="kachabazar-store.jpg"
               title="KachaBazzar Store (FE Contract)"
               link="geolocation-web-store.vercel.app"
-              stack={["NextJS", "React", "TailwindCSS"]}
+              stack={["React/NextJS", "TailwindCSS"]}
             />
             <ProjectImageCard
               imgSrc="apex-proj.jpg"
               title="Apex Project -Landing Page"
               link="apex-project-test.netlify.app"
-              stack={["NextJS", "React", "TailwindCSS"]}
+              stack={["React/NextJS", "TailwindCSS"]}
             />
 
 
