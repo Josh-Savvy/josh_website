@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Hero from "../components/Home/Hero";
 import Layout from "../components/Layout";
 import jwt from "jsonwebtoken";
-import { JWT_SIGNATURE } from "../config";
 import ReviewCard from "../components/Home/ReviewCard";
 import RecentProjectsCard from "../components/Home/RecentProjectsCard";
 
