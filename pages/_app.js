@@ -1,10 +1,10 @@
-import { useEffect} from "react";
+import { useEffect } from "react";
 import "../public/static/assets/css/main.css";
 import "../public/static/assets/css/globals.css";
 import "nprogress/nprogress.css";
+import "animate.css/animate.css";
 
 function MyApp({ Component, pageProps }) {
-
   useEffect(() => {
     if (window) {
       let localStorageTheme = localStorage.getItem("theme");
@@ -40,8 +40,7 @@ function MyApp({ Component, pageProps }) {
     setTheme();
   }, []);
 
-  return <Component {...pageProps} />
-
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

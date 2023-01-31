@@ -5,20 +5,30 @@ import Layout from "../components/Layout";
 const Experience = () => {
   const experienceList = [
     {
-      company: " BAMYX TECHNOLOGIES",
+      company: "Techsity Inc",
       position: "Software Developer",
-      duration: "Jan 2020 - Till Date",
-      imgUrl: "/static/assets/img/bamix.jpg",
+      jobType: "On-Site/Remote",
+      duration: "Jun 2022 - Till Date",
+      imgUrl: "/static/assets/img/techsity.jpg",
+    },
+    {
+      company: "Career break",
+      position: "",
+      jobType: "",
+      duration: "Jan 2022 - May 2022",
+      imgUrl: "/static/assets/img/royalgate.jpg",
     },
     {
       company: " HNG & I4G Internship programme",
       position: "Software Developer (Intern)",
+      jobType: "Remote",
       duration: "Aug 2021 - Dec 2021",
       imgUrl: "/static/assets/img/hngi.jpg",
     },
     {
       company: "RoyalGates Technology",
-      position: "Graphics Designer",
+      position: "Product/Graphics Designer",
+      jobType: "On-Site",
       duration: "Jan 2017 - Jan 2020",
       imgUrl: "/static/assets/img/royalgate.jpg",
     },
@@ -39,6 +49,7 @@ const Experience = () => {
             {experienceList.map((e, i) => (
               <ExperienceCard
                 key={i}
+                jobType={e.jobType}
                 position={e.position}
                 duration={e.duration}
                 company={e.company}

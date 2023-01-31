@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 import { JWT_SIGNATURE } from "../config";
 import ReviewCard from "../components/Home/ReviewCard";
 import RecentProjectsCard from "../components/Home/RecentProjectsCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Home = () => {
   const [viewCounts, setViewCounts] = useState(0);
@@ -34,8 +35,12 @@ const Home = () => {
   return (
     <Layout title="Homepage" footer={true}>
       <Hero viewCounts={viewCounts} />
-      <ReviewCard />
-      <RecentProjectsCard />
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+        <ReviewCard />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+        <RecentProjectsCard />
+      </AnimationOnScroll>
     </Layout>
   );
 };
