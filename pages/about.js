@@ -16,7 +16,7 @@ const About = () => {
     );
   };
   return (
-    <Layout activeLink="about" title="About" footer={true}>
+    <Layout activeLink="About" title="About" footer={true}>
       <>
         <div>
           <div className="md:flex justify-center mt-24">

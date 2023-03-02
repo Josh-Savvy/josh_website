@@ -35,7 +35,7 @@ const Experience = () => {
   ];
 
   return (
-    <Layout activeLink="experience" title="Experience">
+    <Layout activeLink="Experience" title="Experience">
       <>
         <div
           className="container py-16 md:py-20"

@@ -17,7 +17,7 @@ const Contact = () => {
     );
   };
   return (
-    <Layout activeLink="contact" title="Contact">
+    <Layout activeLink="Contact" title="Contact">
       <>
         <div className="mt-28 mb-10">
           <div className="mb-32">

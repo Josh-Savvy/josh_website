@@ -43,7 +43,7 @@ const Projects = () => {
     );
   };
   return (
-    <Layout activeLink="projects" footer={true} title="Projects">
+    <Layout activeLink="Projects" footer={true} title="Projects">
       <div className="mt-20 mb-28 text-zinc-800 dark:text-zinc-200 duration-200">
         <h1 className="md:text-2xl text-xl font-bold mb-5 flex justify-center">
           Projects I've worked on
