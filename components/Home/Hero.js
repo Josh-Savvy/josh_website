@@ -56,7 +56,7 @@ const Hero = ({ viewCounts }) => {
                 </span>
               </div>
               <span className="text-gray-500 dark:text-gray-300 duration-200 text-sm mt-1">
-                based in Lagos, Nigeria. I create meaningful solutions, and give users an optimized user experience.
+                based in Lagos, Nigeria. I create meaningful solutions, and build products with an optimized user experience.
               </span>
             </div>
             <div className="">
