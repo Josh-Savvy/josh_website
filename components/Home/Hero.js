@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 
-const Hero = ({ viewCounts }) => {
+const Hero = ({ viewCounts }) =>
+{
   const [showAlert, setShowAlert] = useState(false);
-  const handleDownload = () => {
+  const handleDownload = () =>
+  {
     document.getElementById("link").click();
     setShowAlert(true);
   };
   showAlert === true &&
-    setTimeout(() => {
+    setTimeout(() =>
+    {
       setShowAlert(false);
     }, 3000);
   return (
     <>
       <div className="relative md:mt-40 flex justify-center">
         {showAlert && (
-          <div className="absolute md:-top-20 top-20" style={{ zIndex: "100" }}>
+          <div className="absolute md:-top-20 top-20 animate__animated animate__bounceInDown" style={{ zIndex: "100" }}>
             <div
               className="relative py-3 pl-4 pr-10 leading-normal font-semibold duration-300 text-green-700 bg-green-100 rounded-lg"
               role="alert"
@@ -52,10 +55,10 @@ const Hero = ({ viewCounts }) => {
                     Joshua Joseph.
                   </span>
                   <br />
-                  <span className="md:text-xl text-lg">A Software Developer</span>
+                  <span className="md:text-xl text-lg animate__animated animate__rubberBand animate__infinite">A Software Developer</span>
                 </span>
               </div>
-              <span className="text-gray-500 dark:text-gray-300 duration-200 text-sm mt-1">
+              <span className="animate__animated animate__bounceInRight text-gray-500 dark:text-gray-300 duration-200 text-sm mt-1">
                 based in Lagos, Nigeria. I create meaningful solutions, and build products with an optimized user experience.
               </span>
             </div>
@@ -85,7 +88,7 @@ const Hero = ({ viewCounts }) => {
               <div className="md:flex grid justify-between md:w-1/3 mt-2">
                 <a
                   href="mailto:joshtee28@gmail.com"
-                  className="mr-3 bg-yellow-600 text-white select-none whitespace-nowrap px-3 py-2 rounded hover:bg-yellow-500 hover:cursor-pointer duration-200"
+                  className="mr-3 bg-yellow-600 animate__animated animate__rubberBand animate__infinite text-white select-none whitespace-nowrap px-6 py-4 rounded hover:bg-yellow-500 hover:cursor-pointer duration-200"
                 >
                   <i className="bx-fw bx bx-envelope"></i> Mail Me
                 </a>
@@ -102,14 +105,14 @@ const Hero = ({ viewCounts }) => {
             </div>
           </div>
           <div className="mt-4 relative md:h-full md:top-0 -ml-10 md:m-0 -top-60">
-            <div className="flex justify-center md:hidden block mt-auto ml-10">
+            <div className="flex justify-center md:hidden block mt-auto ml-10 animate__animated animate__bounceIn">
               <img
                 src="/static/assets/img/blog-author.jpg"
                 className="bg-yellow-200 rounded-full w-60 object-contain shadow-md md:shadow-xl shadow-gray-500 dark:shadow-gray-700"
                 alt=""
               />
             </div>
-            <div className="md:block hidden">
+            <div className="md:block hidden animate__animated animate__bounceIn">
               {/* <div className="md:block hidden border border-2 p-3 rounded-full border-white w-3/4 h-full absolute"></div> */}
               <img
                 src="/static/assets/img/blog-author.jpg"
