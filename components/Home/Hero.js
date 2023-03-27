@@ -12,18 +12,18 @@ const Hero = ({ viewCounts }) =>
     setTimeout(() =>
     {
       setShowAlert(false);
-    }, 3000);
+    }, 4000);
   return (
     <>
       <div className="relative md:mt-40 flex justify-center">
         {showAlert && (
           <div className="absolute md:-top-20 top-20 animate__animated animate__bounceInDown" style={{ zIndex: "100" }}>
             <div
-              className="relative py-3 pl-4 pr-10 leading-normal font-semibold duration-300 text-green-700 bg-green-100 rounded-lg"
+              className="relative top-10 py-3 pl-4 pr-10 leading-normal font-semibold duration-300 text-green-700 bg-green-100 rounded-lg"
               role="alert"
               id="download_alert"
             >
-              <i className="bx bx-cloud-download text-3xl absolute inset-y-0 left-0 flex items-center ml-4"></i>
+              <i className="animate__animated animate__rubberBand animate__infinite bx bx-cloud-download text-3xl absolute inset-y-0 left-0 flex items-center ml-4"></i>
               <p className="pl-10">Resumé download has started</p>
               <span className="absolute inset-y-0 right-0 flex items-center mr-4">
                 <svg
@@ -48,7 +48,7 @@ const Hero = ({ viewCounts }) =>
               Hello!
             </h1>
             <div className="md:grid">
-              <div className="">
+              <div className="md:mt-0 mt-20">
                 <span className="text-gray-700 dark:text-white whitespace-nowrap font-bold md:text-4xl mb-2">
                   <span className="text-2xl">I'm{" "}</span>
                   <span className="dark:text-yellow-600 text-yellow-700 text-3xl">
@@ -85,22 +85,22 @@ const Hero = ({ viewCounts }) =>
                   <i className="bx bxl-facebook-square dark:hover:text-white dark:text-gray-300 hover:text-black duration-200 text-2xl text-gray-500" />
                 </a>
               </div>
-              <div className="md:flex grid justify-between md:w-1/3 mt-2">
+              <div className="flex justify-between md:w-1/3 mt-2">
                 <a
                   href="mailto:joshtee28@gmail.com"
-                  className="mr-3 bg-yellow-600 animate__animated animate__rubberBand animate__infinite text-white select-none whitespace-nowrap px-6 py-4 rounded hover:bg-yellow-500 hover:cursor-pointer duration-200"
+                  className="flex items-center mr-3 bg-yellow-600 text-white select-none whitespace-nowrap px-6 py-4 rounded hover:bg-yellow-500 hover:cursor-pointer duration-200"
                 >
-                  <i className="bx-fw bx bx-envelope"></i> Mail Me
+                  <i className="bx-fw bx bx-envelope"></i> Send a mail
                 </a>
-
-                {/* <span
+                <span
                   onClick={handleDownload}
-                  className="border border-2 dark:text-white select-none whitespace-nowrap rounded border-yellow-500 md:mt-0 mt-4 py-2 px-3 hover:bg-yellow-500 hover:text-white hover:cursor-pointer duration-200"
+                  className="flex items-center mr-3 bg-green-600 text-white select-none whitespace-nowrap px-6 py-4 rounded hover:bg-green-500 hover:cursor-pointer duration-200"
                 >
-                  <i className="bx-fw bx bxs-download animate-bounce"></i>{" "}
+                  <i className="bx-fw bx bxs-download animate__animated animate__rubberBand animate__infinite"></i>{" "}
                   Download CV
-                  <a id="link" href="/joshcv.pdf" download hidden></a>
-                </span> */}
+                  <a id="link" href="/Resume-Joshua-Joseph-2023.pdf" download hidden></a>
+                </span>
+
               </div>
             </div>
           </div>
