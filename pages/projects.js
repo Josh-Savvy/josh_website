@@ -2,8 +2,10 @@ import React from "react";
 import Layout from "../components/Layout";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-const Projects = () => {
-  const ProjectImageCard = ({ title, imgSrc, stack, link }) => {
+const Projects = () =>
+{
+  const ProjectImageCard = ({ title, imgSrc, stack, link }) =>
+  {
     return (
       <>
         <div className="mb-7 w-full">
@@ -87,12 +89,12 @@ const Projects = () => {
                 link="geolocation-web-store.vercel.app"
                 stack={["React/NextJS", "TailwindCSS"]}
               />
-              <ProjectImageCard
+              {/* <ProjectImageCard
                 imgSrc="apex-proj.jpg"
                 title="Apex Project -Landing Page"
                 link="apex-project-test.netlify.app"
                 stack={["React/NextJS", "TailwindCSS"]}
-              />
+              /> */}
             </div>
           </AnimationOnScroll>
         </div>

@@ -3,16 +3,22 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-const About = () => {
-  const ToolsImage = ({ name, alt }) => {
+const About = () =>
+{
+
+  const tools = ["nodejs", "typescript", "nestjs", "graphql", "js", "nextjs", "reactjs", "mongo", "aws", "redux", "sass", "express", "jquery", "github", "mongo", "mysql",]
+  const ToolsImage = ({ name, alt }) =>
+  {
     return (
-      <>
+      <div className="group relative cursor-default">
         <img
           src={`/static/assets/svgs/${name}.svg`}
-          className="bg-zinc-300 p-1 rounded-lg w-3/4 md:w-2/4"
+          className="dark:bg-zinc-600 bg-zinc-100 p-1 rounded-lg w-20 md:w-10"
           alt={alt}
+          title={name}
         />
-      </>
+        <div className="group-hover:block hidden absolute top-0 text-sm left-0">{name}</div>
+      </div>
     );
   };
   return (
@@ -57,19 +63,15 @@ const About = () => {
                   </div>
                   <div>
                     <h1 className="font-semibold mb-3 text-lg">
-                      Tools and skills:
+                      My areas of technical expertise:
                     </h1>
 
-                    <div className="grid grid-cols-4 gap-1">
-                      <ToolsImage name="nextjs" />
-                      <ToolsImage name="reactjs" />
-                      <ToolsImage name="nodejs" />
-                      <ToolsImage name="typescript" />
-                      <ToolsImage name="mongo" />
-                      <ToolsImage name="express" />
-                      <ToolsImage name="aws" />
-                      <ToolsImage name="redux" />
-                      <ToolsImage name="sass" />
+                    <div className="grid grid-cols-4 gap-2">
+                      {tools.map(tool =>
+                      {
+                        return <ToolsImage name={tool} />
+                      })}
+
                     </div>
                   </div>
                 </AnimationOnScroll>
