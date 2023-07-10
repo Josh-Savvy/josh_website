@@ -7,7 +7,7 @@ const ReviewCard = () =>
           <div className="p-3 flex justify-center animate__animated animate__bounceIn">
             <img
               src="/static/assets/img/blog-author.jpg"
-              className="duration-300 bg-rose-300 dark:bg-red-300 rounded-3xl h-1/2"
+              className="duration-300 bg-rose-300 dark:bg-red-300 rounded-3xl h-2/3"
               alt=""
             />
           </div>
