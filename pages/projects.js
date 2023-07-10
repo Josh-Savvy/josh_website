@@ -66,6 +66,12 @@ const Projects = () =>
                 stack={["React/NextJS", "TailwindCSS"]}
               />
               <ProjectImageCard
+                imgSrc="youtube.png"
+                title="Youtube Clone"
+                link="https://youtube-clone-client-x223.vercel.app"
+                stack={["React/NextJS", "NodeJS", "Tailwind", "GSAP"]}
+              />
+              <ProjectImageCard
                 imgSrc="mernprojec.png"
                 title="Blog App - MERN stack"
                 link="mernprojectclient2022.herokuapp.com"
