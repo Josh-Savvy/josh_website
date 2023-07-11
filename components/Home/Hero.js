@@ -98,7 +98,7 @@ const Hero = ({ viewCounts }) =>
                 >
                   <i className="bx-fw bx bxs-download animate__animated animate__rubberBand animate__infinite"></i>{" "}
                   Download CV
-                  <a id="link" href="/Resume-Joshua-Joseph-2023.pdf" download hidden></a>
+                  <a id="link" href="/joshcv.pdf" download hidden></a>
                 </span>
 
               </div>
