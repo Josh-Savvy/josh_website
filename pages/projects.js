@@ -68,7 +68,7 @@ const Projects = () =>
               <ProjectImageCard
                 imgSrc="youtube.png"
                 title="Youtube Clone"
-                link="youtube-clone-client-x223.vercel.app"
+                link="youtube-clone-client.vercel.app"
                 stack={["React/NextJS", "NodeJS", "Tailwind", "GSAP"]}
               />
               <ProjectImageCard
